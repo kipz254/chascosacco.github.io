@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'img/chasco%20building.jpg'%}" alt="">
+          <div class="carousel-container">
+            <h2 class="text-success">Welcome to Chasco Sacco</h2>
+            <p>MOVING TO PROSPERITY TOGETHER</p>
+            <a href="#featured-services" class="btn-get-started">JOIN US</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'img/avacodo.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2 class = text-success>Avocado Business Project</h2>
+            <p> Chasco Sacco is licensed by HCDA and KEPHIS to produce certified avocado seedling.</p>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'img/vegetable.jpg' %}" alt="">
+          <div class="carousel-container">
+            <h2 class="text-success">Chasco Vegetable Project</h2>
+            <p>Gloria F1 seedling.</p>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p><strong>Moving to prosperity together</strong></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'img/chasco%20building.jpg' %}" class="img-fluid" alt="">
+
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>OUR COMMITEMENT.</h3>
+            <p class="fst-italic">
+              Why chasco sacco?.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>We provide financial services at affordable interest rate.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>We endeavor to serve you efficiently with due diligence and professionalism.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>We shall uphold high integrity in the delivery of our services.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>You will be treated with courtesy and consideration,our staff will be helpful to see your needs are attended to.</span></li>
+            </ul>
+            <h4>OUR MISSION</h4>
+            <p>
+              To mobilize members to save and offer sustainable financial service in order to economically empower them through prudent management of resource.
+            </p>
+            <h5>OUR VISION</h5>
+            <p>To be the leading dependable financial services provider in kenya</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Our products and services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <h3><a href="service-details.html" class="read-more stretched-link">BOSA LOAN</a></h3>
+              <ul>
+                <li>Normal loan.</li>
+                <li>School fees</li>
+                <li>Emergency loan</li>
+                <li>Farm input loan</li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <h3><a href="service-details.html" class="read-more stretched-link">ASSET FINANCE</a></h3>
+              <ul>
+                <li>Chaffcutters</li>
+                <li>power saws</li>
+                <li>posho mills</li>
+                <li>motorbikes</li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <h3><a href="service-details.html" class="read-more stretched-link">Boresha loan</a></h3>
+              <ul>
+                <li>Boresha chapchap six months</li>
+              </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <h3><a href="service-details.html" class="read-more stretched-link">Group loans</a></h3>
+              <p>Group loans.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <h3><a href="service-details.html" class="read-more stretched-link">AVOCADO BUSINESS PROJECT.</a></h3>
+             <ul>
+               <li>Seedlings</li>
+               <li>Planting</li>
+               <li>Harvesting</li>
+               <li>Marketing</li>
+             </ul>
+            </div>
+          </div><!-- End Service Item -->
+
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+
+
+    <!-- Portfolio Section -->
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Management Staff</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          {% for person in Team %}
+          <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="CEO">
+              <img src="{{ person.image.url }}" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>{{ person.name }}</h4>
+                <span>{{ person.role }}</span>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+          <!-- End Team Member -->
+
+          </div>
+        </div>
+
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Access our mobile banking services through USSD *882*62#</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>P.O BOX 229, LITEIN</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>0700 000 687</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>chascosaving@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6089627300885!2d35.18971747506711!3d-0.5869584352618429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b07a1d076e663%3A0x8385fecc4a820d4f!2sChasco%20Sacco%20Ltd!5e0!3m2!1sen!2ske!4v1732787550042!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class = "row">
+    <div class ="col-md-3"></div>
+    <div class ="col-md-6">
+        <form action="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <h3>MANAGEMENT STAFF</h3>
+            {{ form.as_p }}
+            <button type="submit" class = "btn btn-primary">REVIEW</button>
+        </form>
+    </div>
+    <div class ="col-md-3"></div>
+</div>
+{% endblock %}
